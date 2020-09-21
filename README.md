@@ -1,3 +1,16 @@
+カスタマイズした設定をclone
+
+```console
+git clone --recursive https://github.com/aiandrox/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+```sh
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+ ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
 Prezto — Instantly Awesome Zsh
 ==============================
 
