@@ -11,6 +11,8 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 ```
 
+※`~./zshrc`が吹っ飛ぶので、事前に退避させておくこと。
+
 Prezto — Instantly Awesome Zsh
 ==============================
 
